@@ -3,7 +3,7 @@ import chalk from "chalk";
 import ora from "ora";
 
 const spinner = ora({
-  text: "json-cli 正在更新....",
+  text: "yong0102-cli 正在更新....",
   spinner: {
     interval: 300,
     frames: ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"].map((item) =>
@@ -13,7 +13,7 @@ const spinner = ora({
 });
 export function update() {
   spinner.start();
-  process.exec("npm install json-cli@latest -g", (error) => {
+  process.exec("npm install yong0102-cli@latest -g", (error) => {
     spinner.stop();
     if (!error) {
       console.log(chalk.green("更新成功"));

@@ -45,19 +45,18 @@ export const getNpmLatestVersion = async (name: string) => {
 };
 
 export const checkVersion = async (name: string, version: string) => {
-  console.log(name, version);
   const latestVersion = await getNpmLatestVersion(name);
   const need = gt(latestVersion, version);
   if (need) {
     console.warn(
-      `检查到json最新版本： ${chalk.blackBright(
+      `检查到yong0102最新版本： ${chalk.blackBright(
         latestVersion
       )}，当前版本是：${chalk.blackBright(version)}`
     );
     console.log(
       `可使用： ${chalk.yellow(
-        "npm install json-cli@latest"
-      )}，或者使用：${chalk.yellow("json update")}更新`
+        "npm install yong0102-cli@latest"
+      )}，或者使用：${chalk.yellow("yong0102 update")}更新`
     );
   }
   return need;
