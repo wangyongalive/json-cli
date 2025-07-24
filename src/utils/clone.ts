@@ -16,7 +16,7 @@ const logger = createLogger({
 });
 
 const goodPrinter = async () => {
-  const data = await figlet("json-cli");
+  const data = await figlet("yong0102-cli");
   console.log(chalk.rgb(40, 156, 193).visible(data));
 };
 
