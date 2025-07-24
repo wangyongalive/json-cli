@@ -1,5 +1,5 @@
 {
-    "name": "json-cli",
+    "name": "yong-cli",
     "version": "0.1.3",
     "description": "json-cli 脚手架",
     "main": "index.js",
