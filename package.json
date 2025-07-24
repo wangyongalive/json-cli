@@ -1,7 +1,7 @@
 {
     "name": "yong0102-cli",
-    "version": "0.1.3",
-    "description": "json-cli 脚手架",
+    "version": "0.1.4",
+    "description": "yong0102-cli 脚手架",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,9 +13,9 @@
         "TypeScript",
         "Element-plus"
     ],
-    "author": "json",
+    "author": "yong0102",
     "bin": {
-        "json": "bin/index.js"
+        "yong0102": "bin/index.js"
     },
     "files": [
         "dist",

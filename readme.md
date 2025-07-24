@@ -1,4 +1,4 @@
-# json-cli
+# yong0102-cli
 
 ![NPM](https://img.shields.io/badge/json-cli)
 
@@ -13,24 +13,24 @@
 ## 📦 安装
 
 ```bash
-npm install json-cli -g
+npm install yong0102-cli -g
 ```
 
 ## 🚩 使用
 
 ```bash
 # 使用模板创建新项目
-json create
+yong0102 create
 
 # 执行项目文件夹名称并选择模板创建新项目
-json create [projectName]
+yong0102 create [projectName]
 
 # 更新脚手架到最新版本
-json update
+yong0102 update
 
 # 查看脚手架版本
-json -v
-json --version
+yong0102 -v
+yong0102 --version
 
 ```
 
