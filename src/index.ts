@@ -1,15 +1,23 @@
-/**es6语法 */
 import { Command } from "commander";
 import { version } from "../package.json";
-import create from "./command/create";
-const program = new Command("json-cli");
-program.version(version, "-v, --version", "output the current version");
+import { create } from "./command/create";
+import { update } from "./command/update";
+const program = new Command("json");
+program.version(version, "-v --version");
+
+program
+  .command("update")
+  .description("更新脚手架 json-cli")
+  .action(async () => {
+    update();
+  });
 
 program
   .command("create")
-  .description("create a new project")
-  .argument("[name]", "project name")
-  .action((name) => {
-    create(name);
+  .description("创建一个新项目")
+  .argument("[name]", "项目名称")
+  .action(async (dirName) => {
+    create(dirName);
   });
+
 program.parse();

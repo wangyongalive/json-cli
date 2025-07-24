@@ -1,6 +1,8 @@
 import simpleGit, { SimpleGit, SimpleGitOptions } from "simple-git";
 import createLogger from "progress-estimator";
 import chalk from "chalk";
+// const figlet = require("figlet");
+import figlet from "figlet"; // 会报错
 import log from "./log";
 
 const logger = createLogger({
@@ -12,6 +14,11 @@ const logger = createLogger({
     ), // 设置加载动画
   },
 });
+
+const goodPrinter = async () => {
+  const data = await figlet("json-cli");
+  console.log(chalk.rgb(40, 156, 193).visible(data));
+};
 
 const gitOptions: Partial<SimpleGitOptions> = {
   baseDir: process.cwd(), // 根目录
@@ -32,9 +39,10 @@ export const clone = async (
     });
 
     // 下面就是一些相关的提示
+    goodPrinter();
     console.log();
     console.log(chalk.blueBright(`==================================`));
-    console.log(chalk.blueBright(`=== 欢迎使用 dawei-cli 脚手架 ===`));
+    console.log(chalk.blueBright(`=== 欢迎使用 json-cli 脚手架 ===`));
     console.log(chalk.blueBright(`==================================`));
     console.log();
 
