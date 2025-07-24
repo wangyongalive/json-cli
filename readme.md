@@ -1,6 +1,6 @@
 # json-cli
 
-![Npm 版本](https://img.shields.io/badge/json-cli_v0.0.1-green)
+![NPM](https://img.shields.io/badge/json-cli)
 
 ## 📖 简介
 
